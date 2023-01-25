@@ -14,7 +14,6 @@
     </head>
     <body>
         <div class="container">
-            <div id="snowflakes"></div>
             <img src="https://cdn.discordapp.com/attachments/998362117101068358/1067658470607818793/canvas.png" alt="Bot icon" width="50%" height="50%">
             <div style="display: table;margin: 0 auto;">
             <h1 style="display: inline-block;">Pixel Arts</h1><a target="_blank" href="https://top.gg/bot/1008692736720908318/invite" class="pixel-arts-button">Invite</a>
@@ -33,23 +32,4 @@
             <iframe src="https://discord.com/widget?id=1018355949586632795&theme=dark" width="100%" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
     </body>
-    <script>
-        // Get the snowflake container
-        const snowflakes = document.getElementById("snowflakes");
-        
-        // Create the snowflakes
-        for (let i = 0; i < 50; i++) {
-          const snowflake = document.createElement("div");
-          snowflake.classList.add("snowflake");
-          snowflake.style.left = `${Math.random() * 100}%`;
-          snowflake.style.animationDelay = `${Math.random() * 10}s`;
-          snowflakes.appendChild(snowflake);
-        }
-        
-        // Move the snowflakes around when the mouse moves
-        snowflakes.addEventListener("mousemove", (event) => {
-          snowflakes.style.transform = `translate(${event.clientX / 50}px, ${event.clientY / 50}px)`;
-        });
-        
-    </script>
 </html>
